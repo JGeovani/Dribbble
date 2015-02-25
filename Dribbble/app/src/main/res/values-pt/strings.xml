@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_load_error">Error no carregamento</string>
+    <string name="msg_loading">Carregando</string>
+    <string-array name="categories">
+        <item>Popular</item>
+    </string-array>
+    <string name="share_title">Compartilhar URL</string>
+    <string name="shots">Shots</string>
+    <string name="user_image">Imagem do usuário</string>
+    <string name="view_count">Visualizações</string>
+    <string name="share">Compartilhar</string>
+</resources>

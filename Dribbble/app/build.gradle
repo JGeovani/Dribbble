@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.pogamadores.concrete"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'LICENSE'
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable 'IconLocation'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.mcxiaoke.volley:library:1.0.9'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.squareup.okhttp:okhttp:2.1.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile('com.squareup.okhttp:okhttp-urlconnection:2.1.0'){
+        exclude group: 'com.squareup.okhttp', module: 'okhttp'
+    }
+    compile('com.squareup.okio:okio:1.1.0') {
+        exclude group: 'com.squareup.okio', module: 'okio'
+    }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alpha_black"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/shotViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        tools:text="10"/>
+
+    <ImageView
+        android:id="@+id/viewCountImage"
+        android:layout_width="@dimen/user_image_size"
+        android:layout_height="@dimen/user_image_size"
+        android:layout_toStartOf="@+id/shotViewCount"
+        android:layout_toLeftOf="@+id/shotViewCount"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_eye"
+        android:contentDescription="@string/view_count"/>
+
+    <TextView
+        android:id="@+id/shotTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/viewCountImage"
+        android:layout_toLeftOf="@+id/viewCountImage"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        tools:text="@string/app_name"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="msg_loading">Loading</string>
+    <string name="msg_load_error">Unable to refresh</string>
+    <string name="shots">Shots</string>
+    <string-array name="nodes" translatable="false">
+        <item>popular</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Popular</item>
+    </string-array>
+
+    <string name="share_title">Share URL</string>
+    <string name="user_image">User Image</string>
+    <string name="view_count">View Count</string>
+    <string name="share">Share</string>
+</resources>
